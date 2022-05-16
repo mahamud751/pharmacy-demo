@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AdminLTE 3 | Dashboard</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    /> -->
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="assets/css/app.min.css" />
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <!-- Custom style CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+      <!-- Preloader -->
+      <div class="preloader flex-column justify-content-center align-items-center">
+        <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60" />
+      </div>
+
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="index3.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <!-- Navbar Search -->
+          <li class="nav-item">
+            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+              <i class="fas fa-search"></i>
+            </a>
+            <div class="navbar-search-block">
+              <form class="form-inline">
+                <div class="input-group input-group-sm">
+                  <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" />
+                  <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+
+          <!-- Messages Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-comments"></i>
+              <span class="badge badge-danger navbar-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle" />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Brad Diesel
+                      <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">Call me whenever you can...</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      John Pierce
+                      <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">I got your message bro</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Nora Silvester
+                      <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">The subject goes here</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+            </div>
+          </li>
+          <!-- Notifications Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-bell"></i>
+              <span class="badge badge-warning navbar-badge">15</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <span class="dropdown-item dropdown-header">15 Notifications</span>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-envelope mr-2"></i> 4 new messages
+                <span class="float-right text-muted text-sm">3 mins</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-users mr-2"></i> 8 friend requests
+                <span class="float-right text-muted text-sm">12 hours</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-file mr-2"></i> 3 new reports
+                <span class="float-right text-muted text-sm">2 days</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+              <i class="fas fa-th-large"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.navbar -->
+
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index3.html" class="brand-link">
+          <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" />
+          <span class="brand-text font-weight-light">Category</span>
+        </a>
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user panel (optional) -->
+
+          <!-- SidebarSearch Form -->
+          <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+              <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search" />
+              <div class="input-group-append">
+                <button class="btn btn-sidebar">
+                  <i class="fas fa-search fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+              <li class="dropdown active">
+                <a href="index.html" class="nav-link"><img src="/medicine/1.webp" alt="" style="width: 50px; padding: 10px" /><span>Women Care</span></a>
+              </li>
+              <li class="dropdown active">
+                <a href="index.html" class="nav-link"><img src="/medicine/2.webp" alt="" style="width: 50px; padding: 10px" /><span>Diabetics</span></a>
+              </li>
+              <li class="dropdown active">
+                <a href="index.html" class="nav-link"><img src="/medicine/3.webp" alt="" style="width: 50px; padding: 10px" /><span>Sexual Wellness</span></a>
+              </li>
+              <li class="dropdown active">
+                <a href="index.html" class="nav-link"><img src="/medicine/4.webp" alt="" style="width: 50px; padding: 10px" /><span>Covid-19-special</span></a>
+              </li>
+              <li class="dropdown active">
+                <a href="index.html" class="nav-link"><img src="/medicine/5.webp" alt="" style="width: 50px; padding: 10px" /><span>Baby & mom care</span></a>
+              </li>
+              <li class="dropdown active">
+                <a href="index.html" class="nav-link"
+                  ><img src="/medicine/6.webp" alt="" style="width: 50px; padding: 10px" /><span>Herbal & homeopathy</span></a
+                >
+              </li>
+              <li class="dropdown active">
+                <a href="index.html" class="nav-link"><img src="/medicine/7.webp" alt="" style="width: 50px; padding: 10px" /><span>Personal care</span></a>
+              </li>
+              <li class="dropdown active">
+                <a href="index.html" class="nav-link"
+                  ><img src="/medicine/8.webp" alt="" style="width: 50px; padding: 10px" /><span>Nutrition & drinks</span></a
+                >
+              </li>
+              <li class="dropdown active">
+                <a href="index.html" class="nav-link"><img src="/medicine/1.webp" alt="" style="width: 50px; padding: 10px" /><span>Diabetics</span></a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper p-3">
+        <!----- Slider Part Start-->
+        <div>
+          <div class="row col-md-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    class="w-100"
+                    alt="..."
+                    style="background-position: center; background-size: cover; height: 600px; background-attachment: fixed"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJvcHRpb25cL2F0dGFjaGVkRmlsZXNXZWItXC90cndvcXQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNDA1LCJoZWlnaHQiOjQ1MCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                    class="w-100"
+                    alt="..."
+                    style="background-position: center; background-size: cover; height: 600px; background-attachment: fixed"
+                  />
+                </div>
+
+                <div class="carousel-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1599814516324-66aa0bf16425?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                    class="w-100"
+                    alt="..."
+                    style="background-position: center; background-size: cover; height: 600px; background-attachment: fixed"
+                  />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <!--<section>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    class="w-100"
+                    alt="..."
+                    style="background-position: center; background-size: cover; height: 600px; background-attachment: fixed"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJvcHRpb25cL2F0dGFjaGVkRmlsZXNXZWItXC90cndvcXQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNDA1LCJoZWlnaHQiOjQ1MCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                    class="w-100"
+                    alt="..."
+                    style="background-position: center; background-size: cover; height: 600px; background-attachment: fixed"
+                  />
+                </div>
+
+                <div class="carousel-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1599814516324-66aa0bf16425?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                    class="w-100"
+                    alt="..."
+                    style="background-position: center; background-size: cover; height: 600px; background-attachment: fixed"
+                  />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>-->
+
+          <section class="section">
+            <div class="row">
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
+                  <div class="card-statistic-4">
+                    <div class="align-items-center justify-content-between">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                          <div class="card-content">
+                            <h5 class="font-15">New Products</h5>
+                            <h2 class="mb-3 font-18">258</h2>
+                            <p class="mb-0"><span class="col-green">10%</span> Increase</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                          <div class="banner-img">
+                            <img
+                              src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjdcLzI3MzQ5LUJsb29kLVByZXNzdXJlLU1hY2hpbmUtQUxQSzItMzdpZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDAsImZpdCI6Im91dHNpZGUifX19"
+                              alt=""
+                              style="width: 200px; height: 200px"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
+                  <div class="card-statistic-4">
+                    <div class="align-items-center justify-content-between">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                          <div class="card-content">
+                            <h5 class="font-15">Flash offer</h5>
+                            <h2 class="mb-3 font-18"></h2>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                          <div class="banner-img">
+                            <img
+                              src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjlcLzI5Mjk1LUFDSS1TYXZsb24tQmFieS1XaXBlcy1BbnRpQmFjdGVyaWFsLWMxbWwuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                              alt=""
+                              style="height: 200px"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
+                  <div class="card-statistic-4">
+                    <div class="align-items-center justify-content-between">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                          <div class="card-content">
+                            <h5 class="font-15">Call to doctor</h5>
+                            <h2 class="mb-3 font-18">+8801788277727</h2>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                          <div class="banner-img">
+                            <img
+                              src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjlcLzI5Mjk1LUFDSS1TYXZsb24tQmFieS1XaXBlcy1BbnRpQmFjdGVyaWFsLWMxbWwuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                              alt=""
+                              style="height: 200px"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <section>
+              <h1>All Products</h1>
+              <div class="row row-cols-1 row-cols-md-5 g-4">
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMTJcLzEyNDc0LU5hcGEtNTAwLTUwMG1nLWJvYWMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMTdcLzE3MTYwLVNlY2xvLTIwLTIwbWctMmpxbi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDAsImZpdCI6Im91dHNpZGUifX19"
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjVcLzI1MjcyLU5hcGEtRVhUUkEtNjVtZy01MDBtZy1uaHYzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNlwvNjEyMy1FLUNhcC00MDAtNDAwbWctZTFqNy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDAsImZpdCI6Im91dHNpZGUifX19"
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjhcLzI4MjIyLURlbnRhbC1GbG9zcy1Ub290aHBpY2stNzdpdC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjlcLzI5MzMzLUhvcmxpY2tzLVN0YW5kYXJkLUphci00NnBrLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjdcLzI3MzYzLVNlbm9yYS1TYW5pdGFyeS1OYXBraW4tQmVsdC0xNXBjcy1wYWQta3k2Zi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjdcLzI3OTMzLUtOOTUtRmFjZS1NYXNrLTUtTGF5ZXJzLVByb3RlY3Rpb24tcTFmdi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDAsImZpdCI6Im91dHNpZGUifX19"
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMTJcLzEyNDc0LU5hcGEtNTAwLTUwMG1nLWJvYWMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMTJcLzEyNDc0LU5hcGEtNTAwLTUwMG1nLWJvYWMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjhcLzI4NTM3LUJhYnktRmFjZS1NYXNrLWhwd2QuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjZcLzI2NTk5LUZlbWljb24tMC05Z3A2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMTJcLzEyNDc0LU5hcGEtNTAwLTUwMG1nLWJvYWMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMTdcLzE3MTYwLVNlY2xvLTIwLTIwbWctMmpxbi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDAsImZpdCI6Im91dHNpZGUifX19"
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjVcLzI1MjcyLU5hcGEtRVhUUkEtNjVtZy01MDBtZy1uaHYzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNlwvNjEyMy1FLUNhcC00MDAtNDAwbWctZTFqNy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDAsImZpdCI6Im91dHNpZGUifX19"
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjhcLzI4MjIyLURlbnRhbC1GbG9zcy1Ub290aHBpY2stNzdpdC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjlcLzI5MzMzLUhvcmxpY2tzLVN0YW5kYXJkLUphci00NnBrLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjdcLzI3MzYzLVNlbm9yYS1TYW5pdGFyeS1OYXBraW4tQmVsdC0xNXBjcy1wYWQta3k2Zi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjdcLzI3OTMzLUtOOTUtRmFjZS1NYXNrLTUtTGF5ZXJzLVByb3RlY3Rpb24tcTFmdi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDAsImZpdCI6Im91dHNpZGUifX19"
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMTJcLzEyNDc0LU5hcGEtNTAwLTUwMG1nLWJvYWMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMTJcLzEyNDc0LU5hcGEtNTAwLTUwMG1nLWJvYWMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjhcLzI4NTM3LUJhYnktRmFjZS1NYXNrLWhwd2QuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="details.html">
+                        <img
+                          src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjZcLzI2NTk5LUZlbWljb24tMC05Z3A2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                          alt=""
+                          style="width: 200px"
+                        />
+                      </a>
+                    </div>
+                    <div class="px-4">
+                      <h5 class="card-title">Napa 500</h5>
+                      <p class="card-text">Beximco Pharmaceuticals Ltd.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between">
+                        <small class="card-text" style="font-size: 20px">$ 10.20</small>
+                        <button class="bg-danger border-0 text-white card-text">10% OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- <div class="row">
+        
+         
+          
+           
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card card-info">
+                  <div class="">
+                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMTJcLzEyNDc0LU5hcGEtNTAwLTUwMG1nLWJvYWMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ==" alt="">
+                  </div>
+                
+                </div>
+              </div>
+             
+          
+         
+            </div> -->
+          </section>
+        </div>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+      </aside>
+      <!-- /.control-sidebar -->
+    </div>
+
+    <!-- ./wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- jQuery -->
+
+    <!-- jQuery UI 1.11.4 -->
+
+    <!-- Tempusdominus Bootstrap 4 -->
+
+    <!-- overlayScrollbars -->
+
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
